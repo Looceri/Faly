@@ -24,7 +24,7 @@ export default defineConfig({
       port: 5500, // Explicitly define the port for HMR WebSocket connection
     },
     proxy: {
-      '/chatgpt': {
+      '/gemini': {
         target: 'http://localhost:8000', // Laravel server
         changeOrigin: true,
         secure: false,

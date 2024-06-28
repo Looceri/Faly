@@ -42,21 +42,6 @@ function handleImageUpload(event) {
         </header>
 
         <form @submit.prevent="form.patch(route('profile.update'))" class="mt-6 space-y-6">
-
-            <div>
-                <img src="storage/profile_pic.svg" alt="Profile Picture"
-                class="w-full h-80 object-cover rounded-md "
-                    id="imagem_iluistartiva" />
-            </div>
-
-            <div>
-                <InputLabel for="imagem" value="Foto de Perfil" />
-
-                <input id="imagem" type="file" class="mt-1 block w-full" @change="handleImageUpload" />
-
-                <InputError class="mt-2" :message="form.errors.imagem" />
-            </div>
-
             <div>
                 <InputLabel for="name" value="Name" />
 
